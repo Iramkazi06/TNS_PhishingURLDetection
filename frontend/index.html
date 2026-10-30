@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Phishing URL Detector</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="box">
+    <h1>Phishing URL Detector</h1>
+    <p class="small">Only the URL text is checked. The link is never opened.</p>
+
+    <input type="text" id="url" placeholder="Enter a URL, e.g. http://paypal.com@free-host7.xyz/signin.php">
+    <button onclick="checkUrl()">Check</button>
+
+    <div id="result"></div>
+    <table id="features"></table>
+
+    <h2>Model results</h2>
+    <table id="metrics"></table>
+    <p class="small">Trained on practice data, so real results would be lower.</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
